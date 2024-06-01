@@ -1,0 +1,588 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3vh 2vw;
+  z-index: 1000;
+  background-color: aliceblue;
+}
+
+nav img {
+  width: 3vw;
+}
+
+nav #portfolio {
+  color: white;
+  display: flex;
+  justify-content: start;
+}
+
+nav #portfolio p {
+  display: none;
+}
+
+nav #portfolio img {
+  width: 8vw;
+}
+
+nav #menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav #menu a {
+  text-decoration: none;
+  color: rgb(9, 10, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw;
+  transition: border-bottom 0.5s ease;
+}
+
+nav #menu a:hover {
+  border-bottom: 1px solid darkblue;
+}
+
+#log {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+#login-form {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30vh;
+  bottom: 20vh;
+  display: none;
+}
+
+#login-form table {
+  width: 100%;
+}
+
+#login-form label {
+  font-weight: bold;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#login-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: #45a049;
+}
+
+#login .signup-option {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#login .signup-option p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#login .social-logos {
+  display: flex;
+  justify-content: center;
+}
+
+#login .social-logos img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+#login .social-logos img:hover {
+  opacity: 0.8;
+}
+
+#cart {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30vh;
+  bottom: 20vh;
+  display: none;
+  overflow: auto;
+}
+
+#cart-table {
+  width: 100%;
+}
+
+#cart #cart-table img {
+  width: 2vw;
+  margin: auto;
+}
+
+#cart p {
+  margin-top: 2vw;
+}
+
+#dropdown {
+  position: absolute;
+  top: 9vh;
+  left: 33vw;
+  background-color: aliceblue;
+  width: 12%;
+  display: none;
+  z-index: 11;
+}
+
+#dropdown a {
+  margin-top: 1.9vh;
+}
+
+details {
+  display: flex;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: auto;
+  z-index: 1000000000000000000000000000000;
+  background-color: white;
+  color: black;
+}
+
+details img {
+  width: 50vw;
+}
+
+details summary {
+  text-align: center;
+}
+
+#popup {
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 2s ease-out;
+}
+
+#popup.show {
+  transform: scale(1);
+}
+
+section {
+  height: auto;
+  margin-top: 12vh;
+  padding-top: 21vh;
+}
+
+#home {
+  display: flex;
+  margin-top: 0vh;
+  height: 88vh;
+  align-items: center;
+}
+
+#home #home-imgs #img-row {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home video {
+  width: 50vw;
+}
+
+#home img {
+  width: 20vw;
+}
+
+#about {
+  margin-top: 15vh;
+  padding: 5vw 2vw;
+  text-align: justify;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#about h1 {
+  font-size: 3.5vw;
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+#about h2 {
+  font-size: 2vw;
+  color: #2c3e50;
+}
+
+#about span {
+  font-weight: bolder;
+  font-size: 1.6vw;
+}
+
+#about img {
+  width: 3vw;
+  height: 3vw;
+  margin: 0.9vw;
+}
+
+#about #content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about #content #unique {
+  display: flex;
+  justify-content: space-around;
+  background: #ecf0f1;
+  border-radius: 5px;
+}
+
+.row {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  padding: 3vh;
+  margin: 3vh;
+}
+
+.card select {
+  position: absolute;
+  bottom: 9vh;
+  left: 1vw;
+}
+
+.card a {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  margin: 3vh;
+}
+
+.amount {
+  font-size: 1.5vw;
+}
+
+#chotu {
+  height: 40vh;
+}
+
+#contact .backToTop {
+  width: 100vw;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: auto;
+  padding: 3vh;
+}
+
+#contact .backToTop2 {
+  width: 100vw;
+  background-color: rgb(89, 102, 116);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: auto;
+  padding: 3vh;
+}
+
+.backToTop2 img {
+  width: 10vw;
+}
+
+#contact {
+  background-color: rgb(89, 102, 116);
+  width: 100vw;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+}
+
+#contact #cnt {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact #cnt #handles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+#contact #handles img {
+  width: 3vw;
+}
+
+#contact #form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact #form input,
+#contact #form textarea {
+  width: 60vw;
+  height: 7vh;
+  padding: 1vw;
+  font-size: 1.7vw;
+  margin-top: 4vh;
+  margin-left: 2vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+#contact #form textarea {
+  height: 15vh;
+}
+
+#contact #form button {
+  border: 1px solid black;
+  width: 30vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  border-radius: 10px;
+  background-color: #0C1737;
+  color: rgb(255, 255, 255);
+  margin: 1vh;
+}
+
+#contact #form button:hover {
+  color: #87a8d1;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav #portfolio p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 40px;
+    color: #0C1737;
+  }
+
+  nav #portfolio img {
+    width: 30vw;
+    margin: auto;
+  }
+
+  nav #portfolio {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+  }
+
+  nav #menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav #menu a {
+    width: 100%;
+    font-size: 3.8vw;
+    text-align: left;
+    padding: 10px 10px;
+    display: none;
+    height: 5vh;
+  }
+
+  nav #menu a:hover {
+    border: none;
+  }
+
+  nav #menu a.show {
+    display: block;
+  }
+
+  nav #log img {
+    width: 7vw;
+    margin: 3.5vh 30vw;
+  }
+
+  #dropdown {
+    top: 12vh;
+    left: 60vw;
+    background-color: aliceblue;
+    width: 50vw;
+    display: none;
+    z-index: 11;
+  }
+
+  #dropdown a {
+    margin-top: 0vh;
+  }
+
+  #home {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #home video {
+    width: 100vw;
+  }
+
+  details {
+    top: 40%;
+    width: 100vw;
+  }
+
+  details img {
+    width: 100vw;
+  }
+
+  #about span {
+    font-size: 1rem;
+  }
+
+  #about h2 {
+    font-size: 1.5rem;
+  }
+  #about h1{
+    font-size: 2rem;
+  }
+
+  #about img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .amount {
+    font-size: 1.5rem;
+  }
+
+  .card select {
+    display: none;
+  }
+
+  .card a {
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #login-form {
+    width: 100vw;
+  }
+
+  #cart {
+    width: 100vw;
+  }
+
+  #cart #cart-table img {
+    width: 8vw;
+    margin: auto;
+  }
+
+  
+
+  
+  .backToTop2 img {
+    width: 30vw;
+  }
+  
+  
+  
+  #contact #handles img {
+    width: 10vw;
+  }
+  
+  
+  
+  #contact #form input,
+  #contact #form textarea {
+   
+    
+   
+    font-size: 0.5rem;
+  }
+  
+  #contact #form textarea {
+    height: 12vh;
+  }
+  
+  #contact #form button {
+   
+    width: 40vw;
+   
+    font-size: 1rem;
+    
+  }
+}

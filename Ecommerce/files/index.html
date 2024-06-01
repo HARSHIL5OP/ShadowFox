@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTroveHub | Site for Premium Electronics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav>
+        <div id="portfolio">
+            <p id="btn">&equiv;</p>
+            <img src="../images/logo.png" alt="logo">
+        </div>
+        <div id="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories" id="cat">Categories</a>
+            <div id="dropdown">
+                <a href="#all">All Prducts</a>
+                <a href="#all">Mobile Phones</a>
+                <a href="#lap">Laptops</a>
+                <a href="#tv">Televisions</a>
+                <a href="#smrt">Others</a>
+            </div>
+            <a href="#bst">Best Selling Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="log">
+            <img src="../images//cart.png" alt="cart" id="mainCart-btn">
+            <img src="../images/login.png" alt="login" id="lgn-btn">
+
+        </div>
+    </nav>
+
+    <div id="login">
+        <form id="login-form">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+            </table>
+            <div class="signup-option">
+                <p>Or sign up using:</p>
+                <div class="social-logos">
+                    <img src="../images/gmail.png" alt="Gmail">
+                    <img src="../images/pngegg (1).png" alt="Gmail">
+                    <img src="../images/pngegg (2).png" alt="Gmail">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="cart">
+        <table id="cart-table">
+            <tr>
+                <th width="10%">Id</th>
+                <th>Product Name</th>
+                <th width="10%">Price</th>
+                <th width="10%">Remove</th>
+            </tr>
+        </table>
+        <p>Total Amount to be Paid is : <b><span id="tot_amt">0</span></b></p>
+    </div>
+    <details open id="popup">
+        <summary>Click to close popup</summary>
+        <img src="../images/home.png" alt="Popup Image">
+    </details>
+    <section id="home">
+        <video id="slider-video" src="../images/1.mp4" autoplay loop muted preload="metadata"></video>
+        <video id="slider-video" src="../images/Introducing Galaxy S23 FE _ Epic starts here _ Samsung.mp4" autoplay
+            loop muted preload="metadata"></video>
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <div id="content">
+            <p>Welcome to <span>TechTroveHub</span>, your ultimate destination for cutting-edge electronics! Founded
+                with a passion for technology and a commitment to customer satisfaction, we strive to provide an
+                unparalleled shopping experience for enthusiasts and casual users alike.</p>
+            <h2> Our Misions</h2>
+            <p> At TechTroveHub, our mission is to empower individuals with the latest innovations in electronics,
+                making technology accessible and enjoyable for everyone. We believe in delivering high-quality products,
+                exceptional service, and expert guidance to help our customers make informed decisions.</p>
+            <h2> What Sets Us Apart</h2>
+            <div class="unique">
+                <img src="../images/checked.png" alt="">
+                Wide Selection: Explore our extensive range of electronics, featuring the latest smartphones, laptops,
+                tablets, TVs, smartwatches, and more from leading brands worldwide.
+            </div>
+            <div class="unique">
+                <img src="../images/checked.png" alt="">
+                Quality Assurance: We meticulously curate our product catalog, ensuring that each item meets our
+                stringent standards for performance, reliability, and durability.
+            </div>
+            <div class="unique">
+                <img src="../images/checked.png" alt="">
+                Expert Advice: Need assistance in finding the perfect device? Our knowledgeable team of tech enthusiasts
+                is here to provide personalized recommendations and answer any questions you may have.
+            </div>  
+            <div class="unique">
+                <img src="../images/checked.png" alt="">
+                Customer Care: Your satisfaction is our top priority. From seamless ordering and secure transactions to
+                prompt delivery and hassle-free returns, we're committed to exceeding your expectations at every step.
+            </div>
+        </div>
+    </section>
+    <section id="all">
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; ">
+                <img src="../images/mob1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">OnePlus Nord CE 3 Lite 5G 128 GB, 8 GB RAM, Pastel Lime, Mobile Phone</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">18,499</span></b><br>VSP : <s>₹19,999</s>
+                        MRP : <s> ₹21,999</s> 16%
+                        off (You Save ₹3,500)</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/mob2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nothing Phone (2a) 5G 128 GB (Black, 8 GB RAM)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">23,999</span></b><br>VSP : <s>₹24,999</s>
+                        MRP : <s> ₹25,999</s> 4% off
+                        (You Save ₹1,000)</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem; height: 35rem;">
+                <img src="../images/mob9..jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG Galaxy S23 FE 5G (Purple 128 GB Storage) (8 GB RAM)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">38,449</span></b><br>MRP : <s>
+                            ₹79,999
+                        </s> 52% off</p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">Phantom Black</option>
+                        <option value="Green">Green</option>
+                        <option value="Cream">Cream</option>
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/mob4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple iPhone 14 Pro (128 GB, Deep Purple)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">95,499</span></b><br>MRP : <s>
+                            ₹1,29,900</s> 7% off (You Save ₹9,370)
+                    </p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">512 GB - Silver</option>
+                        <option value="Green">1 TB - Space Black</option>
+                        <option value="Cream">1 TB - Gold</option>
+                        <option value="Cream">256 GB - Deep Purple</option>
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; height: 35rem;">
+                <img src="../images/mob6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple iPhone 15 Pro Max - 1 TB - Black Titanium</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">1,83,900</span></b><br>MRP : <s>
+                            ₹1,99,900</s> 8% off (You Save
+                        ₹19,370)</p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">1 TB - Black Titanium</option>
+                        <option value="Black">1 TB - Natural Titanium</option>
+                        <option value="Black">512 GB - White Titanium</option>
+                        <option value="Black">256 GB - Blue Titanium</option>
+
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/mob5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        vivo V23e 5G (8GB RAM, 128GB, Midnight Blue)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">23,999</span></b><br>VSP : <s>₹24,999</s>
+                        MRP : <s> ₹25,999</s> 4% off
+                        (You Save ₹1,000)</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/mob7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        oppo F25 Pro 5G (8GB RAM, 128GB, Ocean Blue)</h5>
+                    <p class="card-text"><b>Price ₹<span class="amount">23,999</span></b></p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">Ocean Blue</option>
+                        <option value="Black">Lava Red</option>
+                        <option value="Black">Coral Purple</option>
+
+
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/mob8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple iPad Pro 3rd Gen 2021 27.96 cm (11 inch) Wi-Fi Tablet 8 GB RAM, 128 GB, Space Grey
+                    </h5>
+                    <p class="card-text"><b>Price ₹<span class="amount">71,900</span></b></p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="lap">
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; height: 40rem;">
+                <img src="../images/lap1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">13-inch MacBook Air M1 : Apple M1 chip, 8-core GPU, 8GB memory, 512GB storage
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">74,999</span></b><br>
+                        MRP : <s> ₹89,900</s> 16%
+                        off (You Save ₹3,500)</p>
+
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">Silver</option>
+                        <option value="Green">Gold</option>
+                        <option value="Cream">Space Grey</option>
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/lap2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ASUS TUF F17 Gaming Laptop, Intel Core i5-11400H 11th Gen, 17.3-inch (43.94
+                        cm) 144Hz, (8GB RAM/512GB SSD/4GB NVIDIA GeForce RTX 2050/Windows 11/ RGB Backlit KB/Black/2.30
+                        kg), FX506HF-HX018W</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">52,999</span></b><br>
+                        MRP : <s> ₹58,999</s> 10% off
+                        (You Save ₹1,000)</p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">17 Inch | 8GB RAM | 512GB SSD</option>
+                        <option value="Black">17 Inch | 16GB RAM | 512GB SSD</option>
+                        <option value="Black">15 Inch | 8GB RAM | 1 TBSSD</option>
+
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/lap3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HP Pavilion 15-ec2004AX Gaming Laptop, 5th Gen AMD Ryzen 5 5600H, 8 GB RAM,
+                        upgradable upto 32 GB | 512 GB SSD, 15.6-Inch, Pre-loaded Windows 10 Home with lifetime validity
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">57,500</span></b><br>MRP : <s>
+                            ₹64,700</s> 36% off (You Save
+                        ₹54,500)</p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; height: 40rem;">
+                <img src="../images/lap4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Acer Aspire 3 Spin 14 Intel Core i3 13th Gen N305 - (8 GB/512 GB SSD/Windows
+                        11 Home) A3SP14-31PT-35PS Thin and Light Laptop (14 inch, Silver, 1.54 Kg, With MS Office)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">45,900</span></b><br>
+                        MRP : <s> ₹55,999</s> 18%
+                        off</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/lap5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Dell Inspiron 15 Laptop 12th Generation Intel® Core™ i5-1235U (12MB Cache, up to 4.4 GHz, 10
+                        cores) 16 GB: 2 x 8 GB, DDR4, 2666 MT/s, 512 GB SSD, 15.6", FHD 1920x1080, 120Hz, WVA,
+                        Non-Touch, Anti-Glare, 250 nit, Narrow Border, LED-Backlit, Color : Platinum Silver (Plastic)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">57,989</span></b><br>
+
+
+                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem; ">
+                <img src="../images/lap3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HP Pavilion 15-ec2004AX Gaming Laptop, 5th Gen AMD Ryzen 5 5600H, 8 GB RAM,
+                        upgradable upto 32 GB | 512 GB SSD, 15.6-Inch, Pre-loaded Windows 10 Home with lifetime validity
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">57,500</span></b><br>MRP : <s>
+                            ₹64,700</s> 36% off (You Save
+                        ₹54,500)</p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tv">
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; height: 32rem;">
+                <img src="../images/tv1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">4K UHD Smart Android LED TV 55 Inch Curved (Black)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">29,999</span></b><br>
+                        MRP : <s> ₹134,999</s> 77.78%
+                        off</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/tv2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Bravia 4k Ultra Hd Smart Led Google Tv, Screen Size 43 Inches 3840 X 2160
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">19,990</span></b><br>
+
+
+                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/tv3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi Smart TV X Series 2023
+                        65", Xiaomi Smart TV X 65 (163.9 cm) 2023 Edition
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">61,999</span></b><br>MRP : <s>
+                            ₹89,999</s></p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card myCard" style="width: 18rem; height: 32rem;">
+                <img src="../images/tv4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LG Z1 88 (223.52cm) 8K Smart OLED TV</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">24,499</span></b><br>
+                        VSP : <s> ₹24,999</s> <br>MRP : <s>₹34,990</s> <br> 2%
+                        off (You Save 500)</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card myCard" style="width: 18rem;">
+                <img src="../images/tv5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        iFFALCON 108 cm (43 inches) 4K Ultra HD Smart LED Google TV iFF43U62 (Black)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">18,499</span></b><br>
+                        MRP : <s>₹49,990</s> <br> 63%
+                        off (You Save 31,491)
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="smrt">
+        <div class="row">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="../images/otherr1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">boAt Lunar Call Pro Smart Watch with 1.39 AMOLED Display, BT Calling,Ambient
+                        Light Sensor(Cherry Blossom)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">1,899</span></b><br>MRP : <s>10,999</s>
+                        <br> 2%
+                        off (You Save 500)
+                    </p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/other2.jpeg" class="card-img-top" alt="..." id="chotu">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple Watch Series 9 - 41mm - GPS - Midnight Aluminium Case - Midnight Sport Loop
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">41,900</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        FIRE-BOLTT Gladiator Smartwatch with Bluetooth Calling (49.7mm HD Display, IP67 Water Resistant,
+                        Light Gold Strap)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">3,000</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple Watch SE 40mm aluminium case size Retina display Up to 1,000 nits S8 SiP
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">29,900</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="../images/others5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">boAt Nirvana Ion Bluetooth Wireless Earbuds with Crystal Bionic Sound powered
+                        by HiFi DSP, 120HRS Playback, Dual EQ Modes (Charcoal Black)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">1,799</span></b><br>MRP : <s>7,990</s>
+                        <br> 77%
+                        off (You Save 6,191)
+                    </p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others6.jpeg" class="card-img-top" alt="..." id="chotu">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        boAt Assassin Immortal 121 Bluetooth Earbuds (Red)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">999</span></b><br>MRP : <s>3,999</s>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        PTron Bassbuds Duo Bluetooth V5.1 In-Ear TWS Earbuds, Immersive Sound, 32Hrs Playtime (Grey)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">564</span></b><br>MRP : <s>576</s> <br>
+                        You save ₹12 (2%)
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple MLWK3HN/A Airpods Pro with Magsafe Charging Case, IPX4 Water and Sweat Resistant, Active
+                        Noise Cancellation, White
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">23,490</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="bst">
+        <div class="row">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="../images/mob9..jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG Galaxy S23 FE 5G (Purple 128 GB Storage) (8 GB RAM)</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">38,449</span></b><br>MRP : <s>
+                            ₹79,999
+                        </s> 52% off</p>
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">Phantom Black</option>
+                        <option value="Green">Green</option>
+                        <option value="Cream">Cream</option>
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/mob8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple iPad Pro 3rd Gen 2021 27.96 cm (11 inch) Wi-Fi Tablet 8 GB RAM, 128 GB, Space Grey
+                    </h5>
+                    <p class="card-text"><b>Price ₹<span class="amount">71,900</span></b></p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 40rem;">
+                <img src="../images/lap1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">13-inch MacBook Air M1 : Apple M1 chip, 8-core GPU, 8GB memory, 512GB storage
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">74,999</span></b><br>
+                        MRP : <s> ₹89,900</s> 16%
+                        off (You Save ₹3,500)</p>
+
+                    <select name="" id="" style="margin-top: 1vw; margin-bottom: 1vw;">
+                        <option value="Black">Silver</option>
+                        <option value="Green">Gold</option>
+                        <option value="Cream">Space Grey</option>
+                    </select>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/lap3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HP Pavilion 15-ec2004AX Gaming Laptop, 5th Gen AMD Ryzen 5 5600H, 8 GB RAM,
+                        upgradable upto 32 GB | 512 GB SSD, 15.6-Inch, Pre-loaded Windows 10 Home with lifetime validity
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">57,500</span></b><br>MRP : <s>
+                            ₹64,700</s> 36% off (You Save
+                        ₹54,500)</p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 32rem;">
+                <img src="../images/tv4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LG Z1 88 (223.52cm) 8K Smart OLED TV</h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">24,499</span></b><br>
+                        VSP : <s> ₹24,999</s> <br>MRP : <s>₹34,990</s> <br> 2%
+                        off (You Save 500)</p>
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple Watch SE 40mm aluminium case size Retina display Up to 1,000 nits S8 SiP
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">29,900</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others6.jpeg" class="card-img-top" alt="..." id="chotu">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        boAt Assassin Immortal 121 Bluetooth Earbuds (Red)
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">999</span></b><br>MRP : <s>3,999</s>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/others7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Apple MLWK3HN/A Airpods Pro with Magsafe Charging Case, IPX4 Water and Sweat Resistant, Active
+                        Noise Cancellation, White
+                    </h5>
+                    <p class="card-text"><b>Offer Price ₹<span class="amount">23,490</span></b><br>
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <a href="#home" class="backToTop">Back To Top</a>
+        <div id="cnt">
+            <div id="handles">
+
+                <div>
+                    <img src="../images/pngegg-1.png" alt="">
+
+                </div>
+                <div>
+                    <img src="../images/pngegg (1).png" alt="">
+
+                </div>
+                <div>
+                    <img src="../images/pngegg (2).png" alt="">
+
+                </div>
+            </div>
+            <div id="form">
+                <input type="text" name="" id="name" placeholder="Enter Your Name">
+                <input type="text" name="" id="" placeholder="Enter Your Email">
+                <textarea name="" id="" placeholder="Enter Your Feedback"></textarea>
+                <button onclick="thankYou()">Send Message</button>
+            </div>
+        </div>
+        <a href="#home" class="backToTop2"><img src="../images/logo.png" alt=""></a>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
